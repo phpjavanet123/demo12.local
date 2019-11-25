@@ -16,43 +16,6 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `clients`
---
-
-DROP TABLE IF EXISTS `clients`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `clients` (
-  `id` bigint(10) DEFAULT NULL,
-  `name` varchar(191) DEFAULT NULL,
-  `surname` varchar(191) DEFAULT NULL,
-  `date_of_birth` varchar(191) DEFAULT NULL,
-  `email` varchar(191) DEFAULT NULL,
-  `password` varchar(191) DEFAULT NULL,
-  `phone_number` varchar(191) DEFAULT NULL,
-  `address` varchar(191) DEFAULT NULL,
-  `country` varchar(191) DEFAULT NULL,
-  `trading_account_number` varchar(191) DEFAULT NULL,
-  `balance` varchar(191) DEFAULT NULL,
-  `open_trades` varchar(191) DEFAULT NULL,
-  `close_trades` varchar(191) DEFAULT NULL,
-  `remember_token` varchar(100) DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `clients`
---
-
-LOCK TABLES `clients` WRITE;
-/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (1,'Test1','','','test1@mail.com','$2y$10$j6OUTFwitBLQM5FGCjwegeeMTIW79RBN6B2c8DHa5usyyxfK3CvwO','','','','','','','','','0000-00-00 00:00:00','0000-00-00 00:00:00'),(2,'Test2','','','test2@mail.com','$2y$10$8kCvH4tlUGkeXnjjO7y.rur4kfHMXlBFzaDtkK2zjM8NrepwdDXH6','','','','','','','','','0000-00-00 00:00:00','0000-00-00 00:00:00'),(3,'Client20','Client201','','client20@mail.com','$2y$10$sYdWcmtpOpL3zpcJpqN2tOJh2odVTyt0eAd4lAqEXVp5A8Ki2FSMm','','','','','','','','','0000-00-00 00:00:00','0000-00-00 00:00:00'),(4,'client21','','','client21@mail.com','$2y$10$fKULY4oaBYUYT2eHSiJGoOgctKurMDUEnuseEMtbycm6nFfnC3B1C','','','','','','','','','0000-00-00 00:00:00','0000-00-00 00:00:00');
-/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `currencies`
 --
 
@@ -181,29 +144,6 @@ INSERT INTO `roles` VALUES (1,'Administrator','0000-00-00 00:00:00','0000-00-00 
 UNLOCK TABLES;
 
 --
--- Table structure for table `sqlite_sequence`
---
-
-DROP TABLE IF EXISTS `sqlite_sequence`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `sqlite_sequence` (
-  `name` varchar(10) DEFAULT NULL,
-  `seq` tinyint(4) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `sqlite_sequence`
---
-
-LOCK TABLES `sqlite_sequence` WRITE;
-/*!40000 ALTER TABLE `sqlite_sequence` DISABLE KEYS */;
-INSERT INTO `sqlite_sequence` VALUES ('migrations',8),('roles',2),('users',2),('clients',4);
-/*!40000 ALTER TABLE `sqlite_sequence` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `transactions`
 --
 
@@ -314,4 +254,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-11-25 21:14:28
+-- Dump completed on 2019-11-25 22:02:56
